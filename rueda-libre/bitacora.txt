@@ -1,0 +1,35 @@
+NetWork DevTools
+
+(4)
+URL completa = http://127.0.0.1:3000/modulo-html-css/rueda-libre/index.html 
+El puerto = 3000
+El protocolo = http
+El host = 127.0.0.1
+La ruta = modulo-html-css/rueda-libre/index.html
+Metodo de peticion = GET
+Codigo de estado = 200 OK 
+
+-
+(5)
+Al hacer la peticion a http://127.0.0.1:3000/modulo-html-css/rueda-libre/promociones.html
+Sale un codigo de estado de 404 NOT FOUND
+El Servidor no puedo encontrar la direccion solicitada, por eso el error 404
+En la Web sale lo siguiente:
+
+File not found
+The file "/home/datian/RIWI/modulo-html-css/rueda-libre/promociones.html" cannot be found. It may have been moved, edited, or deleted.
+
+-
+(6)
+Rol de HTML 
+-HTML será el encargado de estruturar el cuerpo y la información de la pagina, agregando titulos,descripciones, imagenes, links, y entre otras caracteristicas que van a componer a la web de Rueda Libre
+* HTML sera usado para mostrar los enlaces de navegación de la pagina, menus, enlaces relativos y externos como un chat por WhatsApp 
+
+Rol de CSS
+-CSS sera el encargado de darle color y estilado a la estrutura previamente creada con HTML
+* CSS será usado para estilizar formularios, encabezados, textos, enlaces imagenes y todo lo que hace llamativa a una web
+
+Rol de JavaScript 
+-JavaScript será usado para darle accion y dinamismo a los elementos previamente creados con HTML
+* JavaScript ayudara al sitio de Rueda Libre a crear un sitio dinamico, funcional, responsivo a peticiones del usuario y manejara el comportamiento de ciertos elementos en la web
+
