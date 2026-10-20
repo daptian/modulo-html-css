@@ -33,3 +33,13 @@ Rol de JavaScript
 -JavaScript será usado para darle accion y dinamismo a los elementos previamente creados con HTML
 * JavaScript ayudara al sitio de Rueda Libre a crear un sitio dinamico, funcional, responsivo a peticiones del usuario y manejara el comportamiento de ciertos elementos en la web
 
+Rueda Libre v0.1:
+Registro de rutas usadas en la web navegable para la v0.1
+
+ARCHIVO DE ORGIEN | DESTINO         | RUTA ESCRITA
+index.html        | tarfias.html    | ./paginas/tarifas.html
+index.html        | reservas.html   | ./paginas/reservas.html
+tarifas.html      | index.html      | ../index.html
+tarifas.html      | reservas.html   | ./reservas.html
+reservas.html     | index.html      | ../index.html
+reservas.html     | tarifas.html    | ./tarifas.html
