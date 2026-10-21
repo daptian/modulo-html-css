@@ -56,3 +56,6 @@ Justificación de div
     <img src="./img/bike.jpg" alt="Imagen de referencia bicicleta" width="300px">
     <img src="./img/route.jpg" alt="Imagen de ruta" width="300px">
 </div>
+
+-Etiqueta span por contendio equivalente
+<span><a href="mailto:hola@ruedalibre.example"> Enlace de contacto por correo</a></span>
