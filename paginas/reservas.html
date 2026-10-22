@@ -17,15 +17,66 @@
         </nav>
     </header>
 
-    <span><a href="mailto:hola@ruedalibre.example"> Enlace de contacto por correo</a></span>
-    <dl>
-        <caption> Nuestros horarios </caption>
-        <dt> Lunes a viernes </dt>
-        <dd> 7:00 am - 7:00 pm</dd>
+    <main>
+        <section>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Tus datos</legend>
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" name="apellido" id="apellido">
+                    <label for="cedula">Cedula de Ciudadania</label>
+                    <input type="number" name="cedula" id="cedula">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="telefono" id="telefono">
+                </fieldset>
+                <fieldset>
+                    <legend>Tu alquiler</legend>
+                    <label for="fecha">Fecha de reserva:</label>
+                    <input type="date" name="fecha" id="fecha">
+                    <label for="n-bicicletas">Numero de bicicletas</label>
+                    <input type="number" value="1" name="n-bicicletas" id="n-bicicletas">
+                    <label for="slct-bicicleta">Tipo de Bicicleta:</label>
+                    <select name="slct-bicicleta" id="slct-bicicleta">
+                        <optgroup label="Economica">
+                            <option value="urbana">Urbana</option>
+                        </optgroup>
+                        <optgroup label="Accesible">
+                            <option value="montaña">Montaña</option>
+                        </optgroup>
+                        <optgroup label="Premium">
+                            <option value="electrica">Eléctrica</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmación</legend>
+                    <span>Seleccione un Metodo de pago</span><br>
+                    <input type="radio" name="metodo-pago" id="tarjeta">
+                    <label for="tarjeta">Tarjeta</label><br>
+                    <input type="radio" name="metodo-pago" id="efectivo">
+                    <label for="efectivo">Efectivo</label><br>
+                    <label for="correo">Correo al que llegará la confirmación de la  reserva</label>
+                    <input type="email" name="correo" id="correo" placeholder="correo@example.com">
+                    <label for="checkbox">Autorizo el Tratamiento de mis datos personales</label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <span><a href="mailto:hola@ruedalibre.example"> Enlace de contacto por correo</a></span>
+        <dl>
+            <caption> Nuestros horarios </caption>
+            <dt> Lunes a viernes </dt>
+            <dd> 7:00 am - 7:00 pm</dd>
 
-        <dt>Sabados, domingos y festivos</dt>
-        <dd>6:00 am - 2:00pm</dd>
-    </dl>
+            <dt>Sabados, domingos y festivos</dt>
+            <dd>6:00 am - 2:00pm</dd>
+        </dl>
+    </main>
+
+
     <footer>
         <strong> Ruta Libre - 2026 - hola@ruedalibre.example</strong>
     </footer>
