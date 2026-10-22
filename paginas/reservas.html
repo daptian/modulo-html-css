@@ -22,23 +22,23 @@
             <form action="" method="post">
                 <fieldset>
                     <legend>Tus datos</legend>
-                    <label for="nombre">Nombres:</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="apellido">Apellidos:</label>
-                    <input type="text" name="apellido" id="apellido">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" name="nombre" id="nombre" required minlength="3" title="Ingresa como minimo 3 caracteres">
                     <label for="cedula">Cedula de Ciudadania</label>
-                    <input type="number" name="cedula" id="cedula">
+                    <input type="text" name="cedula" id="cedula" required minlength="6" maxlength="10" pattern="[0-9]+" title="Ingresa solo números (entre 6 y 10 dígitos)">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="correo@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Ingresa un formato valido de correo">
                     <label for="telefono">Telefono:</label>
-                    <input type="tel" name="telefono" id="telefono">
+                    <input type="tel" name="telefono" id="telefono" required maxlength="10" pattern="3[0-9]{9}" title="Ingresa solo 10 digitos y tu numero debe empezar por 3">
                 </fieldset>
                 <fieldset>
                     <legend>Tu alquiler</legend>
                     <label for="fecha">Fecha de reserva:</label>
-                    <input type="date" name="fecha" id="fecha">
+                    <input type="date" name="fecha" id="fecha" required min="2026-11-01" max="2026-12-31">
                     <label for="n-bicicletas">Numero de bicicletas</label>
-                    <input type="number" value="1" name="n-bicicletas" id="n-bicicletas">
+                    <input type="number" value="0" name="n-bicicletas" id="n-bicicletas" required min="1" max="6" title="Ingresa una cantidad validad maxima(6) - minima(1)">
                     <label for="slct-bicicleta">Tipo de Bicicleta:</label>
-                    <select name="slct-bicicleta" id="slct-bicicleta">
+                    <select name="slct-bicicleta" id="slct-bicicleta" required>
                         <optgroup label="Economica">
                             <option value="urbana">Urbana</option>
                         </optgroup>
@@ -58,11 +58,9 @@
                     <input type="radio" name="metodo-pago" id="efectivo">
                     <label for="efectivo">Efectivo</label><br>
                     <label for="textarea">Información relevante a tener en cuenta:</label>
-                    <textarea name="textarea" id="textarea"></textarea>
-                    <label for="correo">Correo al que llegará la confirmación de la  reserva</label>
-                    <input type="email" name="correo" id="correo" placeholder="correo@example.com">
-                    <label for="checkbox">Autorizo el Tratamiento de mis datos personales</label>
-                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <textarea name="textarea" id="textarea" maxlength="300"></textarea>
+                    <label for="checkbox">Entiendo y acepto las politicas de alquiler</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" required title="Debes de aceptar los terminos">
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
