@@ -51,19 +51,14 @@ reservas.html     | tarifas.html    | ./tarifas.html
 
 Reto Dia 2
 
+-
 [5](5)
-Justificación de div 
--Personalmente pienso que el div en este caso me puede ser util para el grupo de imagenes, por que puedo organizarlas con css y darle un estilo unico
-
-<div>
-    <img src="./img/logo.jpg" alt="Logo de Rueda Libre" width="300px">
-    <img src="./img/bike.jpg" alt="Imagen de referencia bicicleta" width="300px">
-    <img src="./img/route.jpg" alt="Imagen de ruta" width="300px">
-</div>
+Justificación de <span>
 
 -Etiqueta span por contendio equivalente
 <span><a href="mailto:hola@ruedalibre.example"> Enlace de contacto por correo</a></span>
 
+-
 [7](3)
 Tabla de registro pruebas de validación <input> *.html
 
@@ -76,5 +71,56 @@ CAMPO                          | DATO DE PRUEBA | RESULTADO ESPERADO            
 <input> name -> 'telefeno'     | 300123         | Formato invalido por no tener 10 digitos            | Formato invalido ("Ingresa solo 10 digitos y tu numero debe empezar por 3")
 <input> name -> 'n-bicicletas' | 7              | Error de validación por numero mayor al esperado    | Error de validación ("El valor debe ser menor o igual a 6")
 <input> name -> 'n-bicicletas' | 0              | Error de validación por numero menor al esperado    | Error de validación ("El valor debe ser mayor o igual a 1")
+
+-
+[8](2)
+Hallazgos durante auditoria** -> index.html + reseras.html + tarifas
+*1- Hallazgo: Atributo [lang] estaba en un valor equivoco ('en') para el idioma de la pagina que es español
+*1.a Corección: Atributo [lang] correjido a ('lang="es-CO"'); 'es' para el idioma español y 'CO' para español de Colombia
+
+index.html
+*2- Hallazgo: La Etiqueta <p> tenia contendio de relleno
+*2.a Correción: se ha cambiado a un nombre mas directo <p>Bienvenido a la pagina de Rueda Libre</p>
+
+index.html + tarifas.html + 
+*3- Hallazgo: En el pie de pagina estaba escrito 'Ruta Libre' 
+*3.a Corección:     
+    <footer>
+        <strong> Rueda Libre - 2026 - hola@ruedalibre.example</strong>
+    </footer>
+
+index.html
+*4- Hallazgo: El link de Tarifas estaba duplicado dentro del <nav>
+*4.a Corección: Se ha eliminado el link rebundante
+
+index.html
+*5- Hallazgo: Las imagenes tenia un atributo de 'width=300px' 
+*5.a Corección: Se elimino los caracteres 'px' 
+
+index.html
+*6- Hallazgo: Etiqueta <figure> usada para textos
+*6.a Corección: se cambio la etiqueta a un <p> que es mas adecuado
+
+index.html
+*7- Hallazgo: La etiqueta <a> tiene una descripción ambiagua 'Ruta'
+*7.a Corección: Se detallo a 'Como llegar'
+
+[8](4)
+Combinaciones: 
+Texto blanco sobre Verde Ruta : "Apto para texto normal y texto grande"
+blanco sobre Naranja Pedal: "No apto para ninguno"
+Azul noche sobre Naranja Pedal: "Apto para texto normal y texto grande"
+Azul Noche sobre Crema: "Apto para texto normal y para texto grande"
+Gris Asfalto sobre Crema: "Apto para texto normal y para texto grande"
+Verde Ruta sobre crema:"Apto para texto normal y para texto grande"
+Naranja Pedal sobre crema: "No apto para ninguno"
+blanco sobre Azul Noche: "Apto para texto normal y para texto grande"
+
+Mi mapa de uso de color:
+Texto : #010736 y #FCF1D0
+Fondos: #fff y #0D1C42
+Botones: #22396F
+Enlaces: #0F3040
+
 
 

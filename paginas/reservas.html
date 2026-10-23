@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="../img/logo.png" alt="Logo de Rueda Libre" width="300">
         <h1>Reserva tu bicicleta</h1>
         <nav>
             <ul>
@@ -36,7 +37,7 @@
                     <label for="fecha">Fecha de reserva:</label>
                     <input type="date" name="fecha" id="fecha" required min="2026-11-01" max="2026-12-31">
                     <label for="n-bicicletas">Numero de bicicletas</label>
-                    <input type="number" value="0" name="n-bicicletas" id="n-bicicletas" required min="1" max="6" title="Ingresa una cantidad validad maxima(6) - minima(1)">
+                    <input type="number" value="1" name="n-bicicletas" id="n-bicicletas" required min="1" max="6" title="Ingresa una cantidad validad maxima(6) - minima(1)">
                     <label for="slct-bicicleta">Tipo de Bicicleta:</label>
                     <select name="slct-bicicleta" id="slct-bicicleta" required>
                         <optgroup label="Economica">
@@ -49,6 +50,12 @@
                             <option value="electrica">Eléctrica</option>
                         </optgroup>
                     </select>
+                    <label for="slct-tplan">Tipo de plan:</label>
+                    <select name="slct-tplan" id="slct-tplan" required>
+                        <option value="alquiler-hora">Alquiler por hora</option>
+                        <option value="alquiler-medio-dia">Alquiler por medio día(4 horas)</option>
+                        <option value="alquiler-completo">Alquiler día completo</option>
+                    </select>
                 </fieldset>
                 <fieldset>
                     <legend>Confirmación</legend>
@@ -58,16 +65,21 @@
                     <input type="radio" name="metodo-pago" id="efectivo">
                     <label for="efectivo">Efectivo</label><br>
                     <label for="textarea">Información relevante a tener en cuenta:</label>
-                    <textarea name="textarea" id="textarea" maxlength="300"></textarea>
+                    <textarea name="textarea" id="textarea" maxlength="300" rows="5" cols="30"></textarea>
                     <label for="checkbox">Entiendo y acepto las politicas de alquiler</label>
                     <input type="checkbox" name="checkbox" id="checkbox" required title="Debes de aceptar los terminos">
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <span><a href="mailto:hola@ruedalibre.example"> Enlace de contacto por correo</a></span>
+        
+        <span>
+            <h3>Contactanos</h3>
+            <a href="mailto:hola@ruedalibre.example"> Enlace de contacto por correo</a>
+            <a href="tel:+573214567890">Contacto por telefono</a>
+        </span>
         <dl>
-            <caption> Nuestros horarios </caption>
+            <caption><strong>Nuestros horarios</strong>  </caption>
             <dt> Lunes a viernes </dt>
             <dd> 7:00 am - 7:00 pm</dd>
 
@@ -78,7 +90,7 @@
 
 
     <footer>
-        <strong> Ruta Libre - 2026 - hola@ruedalibre.example</strong>
+        <strong> Rueda Libre - 2026 - hola@ruedalibre.example</strong>
     </footer>
 </body>
 </html>
