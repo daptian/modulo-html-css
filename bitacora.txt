@@ -117,10 +117,21 @@ Naranja Pedal sobre crema: "No apto para ninguno"
 blanco sobre Azul Noche: "Apto para texto normal y para texto grande"
 
 Mi mapa de uso de color:
-Texto : #010736 y #FCF1D0
-Fondos: #fff y #0D1C42
-Botones: #22396F
-Enlaces: #0F3040
+  --brand-cyan: #00d8f6;       /* Turquesa del logo */
+  --brand-green: #10b981;      /* Verde ecológico / Acento secundario */
+  
+  /* Estructura y Fondos */
+  --bg-dark: #122137;         /* Header, Footer, Hero oscuro */
+  --bg-light: #f8fafc;        /* Fondo principal del sitio */
+  --bg-card: #ffffff;         /* Fondo de tarjetas / contenedores */
+  
+  /* Textos */
+  --text-primary: #334155;     /* Texto principal muy legible */
+  --text-secondary: #64748b;   /* Texto secundario */
+  --text-light: #ffffff;       /* Texto sobre fondos oscuros */
+
+  /* Botones */
+  --btn-bg-dark: #010736   /* Fondo de botones */  
 
 
 
