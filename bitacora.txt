@@ -135,3 +135,21 @@ Mi mapa de uso de color:
 
 
 
+Reto Día 3
+[9](7)
+Caso de Herencia:
+
+DevTool(Styles)
+CASO = '<p>...</p>' ? Hereda
+*-En mi sitio Web con ayuda de las herramientas DevTools, pude observar que;
+*-La etiqueta '<p>' hereda de 'body' la propiedad de 'font-family' 
+
+DevTool(Computed)
+*- Las propiedades margin-(top,bottom,right,left) son heredadas y su valor es '0'
+*-Las propiedades padding-(top,bottom,right,left) son heredadas y su valor es '0'
+**-La propiedad margin y padding son heredadas por el selector '*'
+
+CASO = '<p>...</p>' ? NO Hereda
+DevTool(Styles)
+^-En mi sitio web con ayuda de las herramientas DevTools, pude observar que;
+*- La etiqueta de parrafo '<p>' NO hereda la propiedad 'color' de 'body'
