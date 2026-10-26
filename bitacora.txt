@@ -117,22 +117,20 @@ Naranja Pedal sobre crema: "No apto para ninguno"
 blanco sobre Azul Noche: "Apto para texto normal y para texto grande"
 
 Mi mapa de uso de color:
-  --brand-cyan: #00d8f6;       /* Turquesa del logo */
-  --brand-green: #10b981;      /* Verde ecológico / Acento secundario */
-  
-  /* Estructura y Fondos */
-  --bg-dark: #122137;         /* Header, Footer, Hero oscuro */
-  --bg-light: #f8fafc;        /* Fondo principal del sitio */
-  --bg-card: #ffffff;         /* Fondo de tarjetas / contenedores */
-  
-  /* Textos */
-  --text-primary: #334155;     /* Texto principal muy legible */
-  --text-secondary: #64748b;   /* Texto secundario */
-  --text-light: #ffffff;       /* Texto sobre fondos oscuros */
+    --night-blue: #00D8F6; -> Verde Ruta 
+    --verde-esmeralda: #10b981;  -> Naranja Pedal
+    --azul-noche: #122137; -> azul noche
+    --blanco-noche: #f8fafc;  -> crema       
+    --gris-pizarra: #334155; -> gris asfalto
 
-  /* Botones */
-  --btn-bg-dark: #010736   /* Fondo de botones */  
-
+Texto blanco sobre Night Blue : "No Apto para ninguno"
+blanco sobre Verde esmeralda: "No apto para ninguno"
+Azul noche sobre Verde esmeralda: "Apto para texto normal y texto grande"
+Azul Noche sobre Blanco Noche: "Apto para texto normal y para texto grande"
+Gris Pizarra sobre Blanco Noche: "Apto para texto normal y para texto grande"
+Night Blue sobre Blanco Noche:No apto para ninguno"
+Verde esmeralda sobre Blanco Noche: "No apto para ninguno"
+blanco sobre Azul Noche: "Apto para texto normal y para texto grande"
 
 
 Reto Día 3
@@ -153,3 +151,33 @@ CASO = '<p>...</p>' ? NO Hereda
 DevTool(Styles)
 ^-En mi sitio web con ayuda de las herramientas DevTools, pude observar que;
 *- La etiqueta de parrafo '<p>' NO hereda la propiedad 'color' de 'body'
+
+[10](2)
+Especifidad de los selectores CSS:
+#1 -> !important 
+#2 -> <etiqueta style="..."> ... </etiqueta> ; Estilos en linea
+#3 -> #menu ; Identificador
+#4 -> .activo ; Clases
+#5 -> a ; Etiquetas
+
+¿ Por que no funciona esta sintaxis de CSS ?
+***
+    #menu a { color: var(--gris-asfalto); }
+    .activo { color: var(--verde-ruta); font-weight: 600; }
+***
+
+Respuesta/= No funciona por que la Especifidad del Identificador es mayor a una clase 
+
+[10](3)
+He encontrado dos formas de resolver el problema 
+1* Intercambiando sus Especificadores para que pese mas cuando el link este activo:
+***
+    .menu  a{color: var(--gris-pizarra);}
+    #activo { color: var(--cyan-turquesa); font-weight: 600; } 
+***
+
+2* Convirtiendo a ambos en clases pero usar un combinador hermano (+) para hacer la seleccion mas especifica.
+***
+    .menu + a{color: var(--gris-pizarra);}
+    .activo { color: var(--cyan-turquesa); font-weight: 600; } 
+***

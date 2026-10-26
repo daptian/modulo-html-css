@@ -2,19 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root{
-    --brand-cyan: #00d8f6;       
-    --brand-green: #10b981;      
-    --bg-dark: #122137;         
-    --bg-light: #f8fafc;        
-    --bg-card: #ffffff;      
-    --text-primary: #334155; 
-    --text-secondary: #262f3a;     
-    --text-thrid: #64748b;   
-    --text-light: #ffffff;      
-    --btn-bg-dark: #010736; 
+    --night-blue: #00D8F6;       
+    --verde-esmeralda: #10b981;      
+    --azul-noche: #122137;         
+    --blanco-noche: #f8fafc;            
+    --gris-pizarra: #334155; 
     --spacing-small : 0.5rem;
     --spacing-md: 1rem;    
     --spacing-lg: 2rem;    
@@ -23,9 +19,9 @@
 }
 
 body{
-    background-color: var(--bg-light);
+    background-color: var(--blanco-noche);
     font-family: var(--text-font-paragraph);
-    color: var(--text-primary);
+    color: var(--azul-noche);
 }
 
 h1, h2, h3 {
@@ -33,6 +29,94 @@ h1, h2, h3 {
 }
 
 p{
-    color: var(--text-secondary);
+    color: var(--gris-pizarra);
 }
 
+/* 
+    Bitacora.txt -> linea 158 : 
+    #menu a { color: var(--text-primary); }
+    .activo { color: var(--brand-cyan); font-weight: 600; } 
+*/
+.menu{
+    margin: 0.5rem;
+}
+
+.menu  a{
+    color: var(--gris-pizarra);
+    padding: var(--spacing-small);
+    font-weight: 500;
+    border-bottom: 2px solid transparent ;
+}
+
+.menu a:hover{
+    transition: .3s;
+    color: var(--azul-noche);
+    border-bottom-color: var(--azul-noche);
+    border-bottom-left-radius: -10px;
+}
+
+.menu a:focus{
+    color: var(--azul-noche);
+    background-color: var(--night-blue);
+}
+
+#activo { 
+    color: #fff; 
+    font-weight: 700; 
+    background-color: #122137;
+    transition: .3s;
+    border-radius: 0.5rem;
+} 
+
+#activo:hover{
+    color: var(--azul-noche);
+    box-shadow: 0px 0px 0px 1px var(--gris-pizarra);
+    background-color: transparent;
+}
+
+
+.btn-action{
+    color: var(--azul-noche);
+    border-radius: 0.5rem;
+    background-color: var(--blanco-noche);
+    padding: var(--spacing-small);
+    font-weight: 600;
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.btn-action:hover{
+    box-shadow: 0px 0px 0px 1px ;
+    background-color: var(--verde-esmeralda);
+    color: var(--azul-noche);
+    transform: translateY(20px);
+    transition: .3s;
+}
+
+.btn-action:focus{
+    background-color:var(--night-blue) ;
+}
+
+.form input:focus{
+    outline: none;      
+    border: none;
+    border: 0.2rem solid;
+    border-radius: 0.5rem;
+    border-color: var(--night-blue); 
+}
+
+.form select:focus{
+    outline: none;      
+    border: none;
+    border: 0.2rem solid;
+    border-radius: 0.5rem;
+    border-color: var(--night-blue); 
+}
+
+.form textarea:focus{
+    outline: none;      
+    border: none;
+    border: 0.2rem solid;
+    border-radius: 0.5rem;
+    border-color: var(--night-blue);           
+}

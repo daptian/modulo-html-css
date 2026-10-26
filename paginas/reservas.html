@@ -16,16 +16,17 @@
         <img src="../img/logo.png" alt="Logo de Rueda Libre" width="300">
         <h1>Reserva tu bicicleta</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <a href="../index.html">Pagina de inicio </a>
                 <a href="./tarifas.html">Tarifas y rutas</a>
+                <a id="activo" href="./reservas.html">Reservas</a>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <form action="" method="post">
+            <form class="form" action="" method="post">
                 <fieldset>
                     <legend>Tus datos</legend>
                     <label for="nombre">Nombre completo:</label>
@@ -74,7 +75,7 @@
                     <label for="checkbox">Entiendo y acepto las politicas de alquiler</label>
                     <input type="checkbox" name="checkbox" id="checkbox" required title="Debes de aceptar los terminos">
                 </fieldset>
-                <button type="submit">Enviar</button>
+                <button class="btn-action" type="submit">Enviar</button>
             </form>
         </section>
         
