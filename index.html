@@ -12,60 +12,66 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+<header class="portada">
+    <div class="cover-up"></div>
+    <section>
         <img src="./img/logo.png" alt="Logo de Rueda Libre" width="300">
         <h1>Rueda Libre</h1>
-        <nav >
+        <nav>
             <ul class="menu">
-                <a id="activo" href="./index.html"> Pagina de inicio</a>
+                <a id="activo" href="./index.html">Pagina de inicio</a>
                 <a href="./paginas/tarifas.html">Tarifas y rutas</a>
                 <a href="./paginas/reservas.html">Reservas</a>
             </ul>
         </nav>
-    </header>
+    </section>
+</header>
 
     <main>
-        <p>Bienvenido a la pagina de Rueda Libre</p>
-        
-        <article>
-            <header>
-                <h2>Quienes Somos</h2>
-            </header>
+        <div>
+            <p class="bienvenida">Bienvenido a la pagina de Rueda Libre</p>
+                <header>
+                    <h2>Quienes Somos</h2>
+                </header>
             <p>
                 En Rueda Libre creemos que la mejor forma de vivir Medellín es sintiendo su clima, su energía y su gente desde el manubrio de una bicicleta. Somos un emprendimiento local apasionado por la movilidad sostenible, el turismo consciente y el amor por nuestra ciudad.
             </p>
             <a class="btn-action" href="#s-encuentranos">Encuentranos</a>
-        </article>
-<br>
+        </div>
+
         <h2>Nuestros Servicios</h2>
-        <article>
-            <header>
-                <h3>Alquiler de Bicicletas</h3>
-            </header>
-            <section>
-                <p>Bicicletas cómodas, seguras y en <strong> excelente estado </strong>, listas para que te muevas a tu propio ritmo por <em>Medellín</em> , disfrutes de sus ciclorrutas y vivas la ciudad de forma sostenible.</p>
-                <a class="btn-action" href="./paginas/reservas.html">Reservar ahora mismo!</a>
-            </section>
-        </article>
-        <br>
-        <article>
-            <header>
-                <h3>Recorridos Guiados</h3>
-            </header>
-            <section>
-                <p><strong>Experiencias inolvidables</strong> explorando la historia, el arte urbano, los parques y los rincones más icónicos de <em>Medellín</em>  en compañía de guías locales expertos.</p>
-                <a class="btn-action" href="./paginas/tarifas.html#t-rutas-tarifas">Ver tarifas</a>
-            </section>
-        </article>
+        <div class="servicios">
+            <article class="servicio ">
+                <header>
+                    <h3>Alquiler de Bicicletas</h3>
+                    <img src="./img/bike.jpg" alt="Imagen de referencia bicicleta" width="300">
+                </header>
+                <section>
+                    <p>Bicicletas cómodas, seguras y en <strong> excelente estado </strong>, listas para que te muevas a tu propio ritmo por <em>Medellín</em> , disfrutes de sus ciclorrutas y vivas la ciudad de forma sostenible.</p>
+                    <a class="btn-action" href="./paginas/reservas.html">Reservar ahora mismo!</a>
+                </section>
+                    </article>
+                    <article class="servicio ">
+                        <header>
+                            <h3>Recorridos Guiados</h3>
+                            <img src="./img/route.jpg" alt="Imagen de ruta" width="300">
+                        </header>
+                        <section>
+                            <p><strong>Experiencias inolvidables</strong> explorando la historia, el arte urbano, los parques y los rincones más icónicos de <em>Medellín</em>  en compañía de guías locales expertos.</p>
+                            <a class="btn-action" href="./paginas/tarifas.html#t-rutas-tarifas">Ver tarifas</a>
+                        </section>
+                    </article>
+        </div>
+
+                <article class="servicio ">
+                    <header>
+                        <h3>Taller básico</h3>
+                    </header>
+                    <section>
+                        <p>Aprende los fundamentos esenciales de la <strong>mecánica de bicicletas</strong>  (como reparar un pinchazo, ajustar frenos y lubricar la cadena) para ganar autonomía y rodar con total tranquilidad.</p>
+                    </section>
+                </article>
         
-        <article>
-            <header>
-                <h3>Taller básico</h3>
-            </header>
-            <section>
-                <p>Aprende los fundamentos esenciales de la <strong>mecánica de bicicletas</strong>  (como reparar un pinchazo, ajustar frenos y lubricar la cadena) para ganar autonomía y rodar con total tranquilidad.</p>
-            </section>
-        </article>
 
         <section>
             <header>
@@ -77,7 +83,6 @@
                 <li>Acércate al punto de entrega asignado para recibir tu bicicleta en óptimas condiciones, junto con tu casco y elementos de seguridad.</li>
                 <li>Haz el Pago y explora la ciudad a tu propio ritmo y, al terminar el tiempo acordado, devuélvela en el punto establecido.</li>
             </ol>
-            <img src="./img/bike.jpg" alt="Imagen de referencia bicicleta" width="300">
         </section>
 
         <section>
@@ -98,7 +103,6 @@
             <aside>
                 <a href="https://www.google.com/maps/place/De+Moda+Outlet/@6.2193831,-75.5833746,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4429e1dab04e05:0x5a77c25c8a5faf3a!8m2!3d6.2193831!4d-75.5833746!16s%2Fg%2F11gv_xr9wj?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Como llegar</a>
                 <a href="mailto:hola@ruedalibre.example">Enviar un correo</a>
-                <img src="./img/route.jpg" alt="Imagen de ruta" width="300">
             </aside>
         </section>
     </main>

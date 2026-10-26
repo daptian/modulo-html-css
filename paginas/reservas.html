@@ -12,7 +12,9 @@
     <title>Reservas | Rueda Libre</title>
 </head>
 <body>
-    <header>
+    <header class="portada">
+        <div class="cover-up"></div>
+        <section>
         <img src="../img/logo.png" alt="Logo de Rueda Libre" width="300">
         <h1>Reserva tu bicicleta</h1>
         <nav>
@@ -22,9 +24,11 @@
                 <a id="activo" href="./reservas.html">Reservas</a>
             </ul>
         </nav>
+        </section>
     </header>
 
     <main>
+        <h2 class="h-p"> Formulario de reserva </h2>
         <section>
             <form class="form" action="" method="post">
                 <fieldset>
@@ -65,15 +69,17 @@
                 </fieldset>
                 <fieldset>
                     <legend>Confirmación</legend>
-                    <span>Seleccione un Metodo de pago</span><br>
+                    <label for="metodo-pago"> Seleccione el metodo de pago</label>
+                    <label for="tarjeta">Tarjeta</label>
                     <input type="radio" name="metodo-pago" id="tarjeta">
-                    <label for="tarjeta">Tarjeta</label><br>
+                    <label for="efectivo">Efectivo</label>
                     <input type="radio" name="metodo-pago" id="efectivo">
-                    <label for="efectivo">Efectivo</label><br>
                     <label for="textarea">Información relevante a tener en cuenta:</label>
                     <textarea name="textarea" id="textarea" maxlength="300" rows="5" cols="30"></textarea>
-                    <label for="checkbox">Entiendo y acepto las politicas de alquiler</label>
-                    <input type="checkbox" name="checkbox" id="checkbox" required title="Debes de aceptar los terminos">
+                    <fieldset class="text-checkbox">
+                        <label for="checkbox" class="">Entiendo y acepto las politicas de alquiler</label>
+                        <input type="checkbox" name="checkbox" id="checkbox" required title="Debes de aceptar los terminos">
+                    </fieldset>
                 </fieldset>
                 <button class="btn-action" type="submit">Enviar</button>
             </form>

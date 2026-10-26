@@ -181,3 +181,15 @@ He encontrado dos formas de resolver el problema
     .menu + a{color: var(--gris-pizarra);}
     .activo { color: var(--cyan-turquesa); font-weight: 600; } 
 ***
+
+
+[10](7)
+
+Medida sin usar box-sizing: 
+401.2 x 536
+369.200 x 504 (Computed)
+
+Medida con box-sizing:
+409.2 x 536 
+377.200 x 504 (Computed)
+
