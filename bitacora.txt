@@ -183,8 +183,7 @@ He encontrado dos formas de resolver el problema
 ***
 
 
-[10](7)
-
+[11](7)
 Medida sin usar box-sizing: 
 401.2 x 536
 369.200 x 504 (Computed)
@@ -193,3 +192,40 @@ Medida con box-sizing:
 409.2 x 536 
 377.200 x 504 (Computed)
 
+[12](7)
+Resumen de la semana 
+Minireto del dia 1:
+
+Aqui se construyeron las bases para lo que seria el sitio web Rueda libre, se desarrollo lo basico de un documento HTML 
+entre esas cosas, las etiquetas de imgenes, link, texto, parrafos, encabezados , etc.
+
+Tambien se desarrollaron las navegaciones entre paginas
+
+Que mejoraria frente a este Reto ?
+
+-* Mejoraria mi conocimiento frente a las etiquetas HTML, ya que existen demasiadas y cada una tiene un caso especifico de uso.
+
+Minireto del dia 2:
+
+Aqui se construyeron las bases semanticas de todo documento HTML, una correcta organizacion en el HTML, da un buen resultado en los
+buscadores web, tambien se creo el formulario y sus campos, validando su accesibilidad y los requerimientos de cada uno.
+
+Tambien se llevo a la publicación del sitio en Github Pages, ya habiando creado un sitio navegable, tanto desde el mouse, como el teclado 
+para temas de accesibilidad
+
+Que mejoraria frente a este Reto ?
+
+-* La semantica HTML, muchas veces me quedaba pensando en que etiqueta deberia usar para cierto caso en especifico y como este
+podria afectar en los resultados de un navegador.
+
+Minireto del dia 3:
+
+En este reto se dio a la tarea de elegir la paleta de colores y la identidad visual de Rueda Libre, se añadio tambien
+estados de :focus y :hover para mejorar la accesibilidad del sitio web 
+
+Se reviso por ultima vez, la navegación del sitio web y la accesibilidad una vez mas.
+
+Que mejoraria frente a este Reto ?
+
+-* Diria que mejoraria la paleta de colores e identidad visual, siento que es un paso que si se escoje a la ligera puede afectar la 
+instacia del usuario en mi web.
