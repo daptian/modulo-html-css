@@ -236,5 +236,9 @@ instacia del usuario en mi web.
 
 Reto 1 
 
+[1](5)
 
+Que ocurre con el encabezado y el pie de pagina ?
+-*El menu de los enlaces se acomoda de acuerdo si la pantalla es igual o menor a 768px
+-* El pie de pagina no se colapsa y se ve desordenado y 'apeñuscado' dentro del contenedor  
 
