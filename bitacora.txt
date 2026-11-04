@@ -260,3 +260,40 @@ Caso 4 [Fila de Formulario]
 -* En 'reservas.html' para el formulario uni en una columna los campos de telefono y correo usando flex y flex-wrap para que el contenido colapse si no hay espacio
 Caso 5 [Encabezado y pie]
 -* Para el pie de pagina use Grid column para organizar las 3 columnas de acuerdo a lo que pedia el ejercicio y en el encabezado '.bienvenida' use display grid para organizar dos columnas cada una de la misma fraccion
+
+[4](6)
+Contexto de medida de la pantalla [360px]:
+
+Problema responsive #1
+-* En la seccion del header el titulo en '<h2>' chocaba con la imagen y desordenaba el menu tambien
+Solucion reponsive #1
+-* Para solucionar esto, elimine la imagen en esta medida con 'display:none' y el titulo lo centre por encima del menu, ademas use 'flex' y 'flex-wrap' en el menú para 
+hacer que el contenido pase a una siguiente linea en caso tal de que en la actual este no se organize en el contenido del padre
+
+Contexto de la medida de la pantalla [768px]:
+
+Problema responsive #2
+-* En la pagina de 'tarifas.html', en la sección de las tablas, el contenido desbordaba la pagina y hacia que se creara un scroll horizontal que debaja un huevo blanco en toda la mitad de la pagina
+Solución responsive # 2
+-* Para solucionar esto, le añadi al contenedor de la tabla la propiedad 'overflow-x' para el eje x del contendor con un valor de 'auto' esto para que la tabla no se salga de su contenedor y tenga un scroll permitido 
+por la porpieda 'min-width: 30rem;' anchura minima de 30rem.
+
+Problema responsive #3
+-* En las 3 paginas en la seccion del footer o pie de pagina el contenido se desboardaba por que tenia definida su estructura en tres columnas
+Solución responsive #
+-* Para solucionar este problema use la propiedad 'grid' y 'grid-template-columns' para darle un ajuste automatico de acuerdo al tamaño del contenido, lo hice de la sguiente manera:
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(min(100%, 12rem), 1fr)
+    ); 
+-repeat: me define cuantas veces se va a repetir la columna
+-autofit: coloca tantos elementos como el espacio lo permita
+-minmax: me establece un ancho y un minimo para cada columna 
+-min: me compara dos valores y me devuelve el menor -> min(100%, 12rem) : Esto se hace para que en un contendor pequeño la columna se ajusta al tamaño disponible y no en 
+el caso contrario que la columna se deborde
+
+Problema responsive #4
+-* En la portada de la Pagina el titulo 'h1' en pantallas pequeñas no se encojia sino que se desbordaba y quedaba feo el contendio 
+Solucion responsive #4
+-* Use la propiedad de CSS 'clamp' para adaptar el texto al contenido con 3 valores ; 'clamp(valor_minimo, valor_preferido, valor_maximo)', haciendo que el texto sea responsivo de acuerdo al tamaño de la pantalla
