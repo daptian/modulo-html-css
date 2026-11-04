@@ -117,10 +117,17 @@ p{
 
 /* Elementos del formulario de reservas */
 
+.form-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+}
+
 .form{
-    background-color: #fff;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-sm);
     width: 100%;
+        background-color: #fff;
+
     & legend{
         background-color: var(--azul-noche);
         color: #fff;
@@ -132,7 +139,7 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: var(--spacing-md);
+        border: none;
     }
 
     & label{
@@ -238,6 +245,27 @@ p{
 
 }
 
+.form .campos-alineados{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 0.1rem;
+    flex-wrap: wrap;
+    & label{
+        width: 100%;
+        display: inline-flex;
+    }
+    & input{
+        width: 100%;
+        display: inline-flex;
+        box-shadow: none;
+        transform: none;
+    }
+}
+
 /* Caja principal del contendio  */
 
 main{
@@ -248,17 +276,48 @@ main{
 
 .bienvenida{
     margin: var(--spacing-lg) 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    & header{
+        text-align: center;
+        background-color: var(--azul-noche);
+        color: var(--blanco-noche);
+        border-radius: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
     & h2{
         font-size: var(--spacing-lg);
     }
     & h3{
-        color: var(--gris-pizarra);
         margin: var(--spacing-md);
     }
     & p{
         margin: var(--spacing-md);
+        text-align: center;
+        color: var(--blanco-noche);
+    }
+    & section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        padding: var(--spacing-md);
+        background-color: var(--verde-esmeralda);
+        height: max-content;
+        border-top-right-radius: var(--spacing-md);
+        border-bottom-right-radius: var(--spacing-md);
+
     }
 }
+
+.s-nuestras-rutas{
+    & div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 /* Portada al inicio de cada pagina  */
 
@@ -513,8 +572,12 @@ footer{
 .s-contacto{
     margin: var(--spacing-md);
     padding: var(--spacing-md);
-    box-shadow: 0px 0px 2px 0px inset;
-    border-radius: 0.5rem;
+    position: sticky;
+    width: max-content;
+    height: max-content;
+    top: var(--spacing-sm);
+    left: 0px;
+    border-left: 0.5rem solid var(--azul-noche);
 }
 
 .s-flota{

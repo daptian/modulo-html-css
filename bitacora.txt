@@ -241,7 +241,7 @@ Que ocurre con el encabezado y el pie de pagina ?
 -*El menu de los enlaces se acomoda de acuerdo si la pantalla es igual o menor a 768px
 -* El pie de pagina no se colapsa y se ve desordenado y 'apeñuscado' dentro del contenedor  
 
-[2].6
+[2](3)
 -*A 1280px
   **A esta medida se logran ver 3 columnas
 -*A 900px 
@@ -249,3 +249,14 @@ Que ocurre con el encabezado y el pie de pagina ?
 -*A 500px 
   **A esta medida se logra ver 1 columna  
 
+[3](5)
+Caso 1 [Portada]
+-* En el archivo 'index.html' lo hice con grid por que me ayuda a definir las dos columnas que me pedia el ejercicio
+Caso 2 [Galería]
+-* En el archivo 'index.html' lo hice con grid, por que es lo ideal para definir las 3 columnas para cada articulo de la seccion como lo pedia el ejercicio
+Caso 3 [Reservas]
+-* En 'reservas.html' use grid para darle una porcion de 2fr a el formulario y 1fr a la parte de contacto
+Caso 4 [Fila de Formulario]
+-* En 'reservas.html' para el formulario uni en una columna los campos de telefono y correo usando flex y flex-wrap para que el contenido colapse si no hay espacio
+Caso 5 [Encabezado y pie]
+-* Para el pie de pagina use Grid column para organizar las 3 columnas de acuerdo a lo que pedia el ejercicio y en el encabezado '.bienvenida' use display grid para organizar dos columnas cada una de la misma fraccion
