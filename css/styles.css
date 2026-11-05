@@ -123,10 +123,7 @@ img {
 
 .form-section {
     display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(min(100%, 20rem), 1fr)
-    );
+    grid-template-columns: 2fr 1fr;
     gap: var(--spacing-md);
     position: relative;
     width: 100%;
@@ -137,13 +134,22 @@ img {
     min-width: 0;
     padding: var(--spacing-md);
     background-color: #fff;
+    box-shadow: 0px 0px 1px ;
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
 }
 
+
 .form legend {
-    background-color: var(--azul-noche);
-    color: #fff;
+    color: var(--azul-noche);
+    /* color: #fff; */
     padding: var(--spacing-sm);
-    border-radius: var(--radius-sm);
+    width: 100%;
+    font-weight: 900;
+    margin: var(--spacing-md) 0rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    /* border-bottom: var(--spacing-sm) solid var(--azul-noche); */
 }
 
 .form fieldset {
@@ -152,6 +158,8 @@ img {
     align-items: stretch;
     border: none;
     gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0rem;
+    
 }
 
 .form label {
@@ -180,10 +188,7 @@ img {
 }
 
 .form select {
-    background-color: var(--azul-noche);
-    color: #fff;
     font-weight: 700;
-    border: none;
 }
 
 .form textarea {
@@ -244,11 +249,8 @@ img {
 }
 
 .form .campos-alineados {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: var(--spacing-sm);
     width: 100%;
     border: none;
@@ -261,7 +263,6 @@ img {
 }
 
 .form .campos-alineados input {
-    width: auto;
     box-shadow: none;
     transform: none;
 }
@@ -684,6 +685,13 @@ footer strong {
 
 
 /* media querys */
+
+@media (max-width:768px) {
+    .form-section .campos-alineados{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 @media (min-width:768px) {
     .portada img{

@@ -297,3 +297,93 @@ Problema responsive #4
 -* En la portada de la Pagina el titulo 'h1' en pantallas pequeñas no se encojia sino que se desbordaba y quedaba feo el contendio 
 Solucion responsive #4
 -* Use la propiedad de CSS 'clamp' para adaptar el texto al contenido con 3 valores ; 'clamp(valor_minimo, valor_preferido, valor_maximo)', haciendo que el texto sea responsivo de acuerdo al tamaño de la pantalla
+
+Reto 2
+
+[5](5)
+Distribución de la flota en Bootstrap
+
+--**. TIEMPO INVERTIDO
+- 1h y 42 min
+
+--**. COMPARACIÓN DEL CSS: VERSIÓN PROPIA VS. BOOTSTRAP
+
+Versión propia (CSS):
+
+- .s-flota:
+  - width: 100%.
+  - Margen vertical del título h3 mediante variables CSS.
+
+- .box-flota:
+  - display: grid.
+  - grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)).
+  - gap: var(--spacing-md).
+
+- .box-flota article:
+  - display: flex.
+  - flex-direction: column.
+  - min-width: 0.
+  - Padding personalizado.
+  - Fondo blanco.
+  - Borde izquierdo de 0.2rem.
+  - Bordes redondeados.
+  - Sombra.
+
+- .box-flota article a:
+  - display: inline-block.
+  - width: fit-content.
+  - max-width: 100%.
+  - margin-top: auto.
+  - Padding personalizado.
+  - Fondo azul oscuro.
+  - Texto blanco y negrita.
+  - Bordes redondeados.
+
+Versión actual (Bootstrap):
+
+- container px-4 py-4: contenedor y espaciado exterior.
+- row: estructura de filas
+- row-cols-1: una columna en pantallas pequeñas
+- sm:row-cols-2: dos columnas desde el breakpoint sm.
+- lg:row-cols-3: tres columnas desde el breakpoint lg.
+- xl:row-cols-4: cuatro columnas desde el breakpoint xl.
+- gx-3: separación horizontal entre columnas
+- gy-4: separación vertical entre filas
+- col: distribución automática del espacio de cada columna.
+- card: estructura visual de las tarjetas
+- card-body: organización del contenido interno
+- img-fluid: adaptación de las imágenes al ancho disponible
+- card-img: estilo de las imágenes
+- card-title: estilo de los títulos
+- card-text: estilo de las descripciones
+- h-100: altura del 100% disponible
+- btn-solid theme-accent: estilos personalizados de los botones
+
+--**. QUÉ ME DIO BOOTSTRAP SIN ESFUERZO?
+
+Bootstrap facilitó considerablemente la construcción del diseño responsive de la flota. Mediante sus clases de Grid pude distribuir las bicicletas en diferentes cantidades de columnas dependiendo del tamaño de pantalla,
+sin tener que escribir manualmente las reglas de CSS para cada breakpoint
+
+También me dio:
+- Un sistema de distribucion mediante filas y columnas
+- Espaciado horizontal y vertical mediante gutters
+- Componentes de tarjetas reutilizables
+- Clases para adaptar imágenes
+- Clases para controlar alturas y organizar el contenido
+- Una estructura más rápida y sencilla de mantener
+
+--**. QUE CONTROL PERDI?
+
+Al utilizar Bootstrap deje de controlar directamente algunos aspectos de la distribución y presentación que anteriormente definía mediante CSS propio.
+
+En mi versión original tenía control directo sobre:
+- El comportamiento automático de las columnas mediante auto-fit y minmax().
+- El ancho mínimo de las tarjetas.
+- La separación entre elementos mediante gap.
+- Los márgenes, rellenos y dimensiones personalizados.
+- Los bordes, sombras, colores y redondeados de las tarjetas.
+- La distribución interna de los elementos mediante Flexbox.
+
+Con Bootstrap tuve que adaptarme a su sistema de Grid, sus breakpoints y sus clases predefinidas. También necesité comprender cómo funcionan los gutters, ya que afectan el espacio disponible entre las columnas.
+
+
