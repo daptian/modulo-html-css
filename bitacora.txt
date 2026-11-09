@@ -391,6 +391,8 @@ Con Bootstrap tuve que adaptarme a su sistema de Grid, sus breakpoints y sus cla
 
 Dia 1 
 
+Reto 1
+
 [1](1)Comparación entre Bootstrap y Tailwind CSS
 
 **En la semana 2 construí el botón utilizando Bootstrap, que permite crear rápidamente un botón con estilos predeterminados, como el color, el tamaño y el diseño. 
@@ -404,3 +406,19 @@ el desarrollo. En cambio, Tailwind CSS es utility-first, porque permite construi
 
 En conclusión, considero que Bootstrap es más práctico cuando se busca desarrollar rápidamente utilizando estilos predeterminados, mientras que Tailwind ofrece más flexibilidad para crear diseños personalizados 
 según las necesidades del proyecto lo cual me gusta mucho màs
+
+[2](3) 
+Que encontre en output.css y por que ocurre ?
+
+Clase que uso 
+  bg-green-500
+
+Clase que no uso 
+  bg-pink-500 
+
+En este archivo encontre al parecer todas las clases que use en mi archivo html, tailwind esta usando todas las clases que he declarado
+para el tema del estilizado, esto ocurre por que Tailwind esta escuchando cambios en mi html para escribirlos en el archivo output.css ya que usamos --watch
+
+Tailwind utiliza este archivo para escribir en codigo css las clases que uso en mi proyecto
+
+
