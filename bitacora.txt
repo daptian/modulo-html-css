@@ -387,3 +387,20 @@ En mi versión original tenía control directo sobre:
 Con Bootstrap tuve que adaptarme a su sistema de Grid, sus breakpoints y sus clases predefinidas. También necesité comprender cómo funcionan los gutters, ya que afectan el espacio disponible entre las columnas.
 
 
+*****Semana Tres*****
+
+Dia 1 
+
+[1](1)Comparación entre Bootstrap y Tailwind CSS
+
+**En la semana 2 construí el botón utilizando Bootstrap, que permite crear rápidamente un botón con estilos predeterminados, como el color, el tamaño y el diseño. 
+  Fue un proceso sencillo porque Bootstrap ya tiene componentes listos para utilizar, por lo que no fue necesario personalizar cada detalle del botón.
+
+Hoy construí el mismo botón utilizando Tailwind CSS. En este caso, tuve que agregar diferentes clases directamente en el HTML para definir su apariencia, como bg-green-700 para el color de fondo, text-white para el color del texto, px-8 py-3 para el espaciado y rounded-lg para los bordes redondeados. 
+  También agregué efectos al pasar el cursor, como hover:bg-green-600 y una transición de colores.
+
+**-Una diferencia clave entre ambos frameworks es que Bootstrap es un framework basado en componentes, ya que ofrece elementos prediseñados que facilitan y agilizan 
+el desarrollo. En cambio, Tailwind CSS es utility-first, porque permite construir los diseños utilizando pequeñas clases de utilidad que dan mayor libertad y control sobre la personalización de cada elemento.
+
+En conclusión, considero que Bootstrap es más práctico cuando se busca desarrollar rápidamente utilizando estilos predeterminados, mientras que Tailwind ofrece más flexibilidad para crear diseños personalizados 
+según las necesidades del proyecto lo cual me gusta mucho màs
