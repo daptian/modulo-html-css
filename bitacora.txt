@@ -414,11 +414,17 @@ Clase que uso
   bg-green-500
 
 Clase que no uso 
-  bg-pink-500 
+  .bg-yellow-700 {
+    background-color: var(--color-yellow-700);
+  }
+
+Actualmente no uso 'bg-yellow-700', pero si lo probe en un pequeño momento mientras pensaba en los colores, tailwind lo ha guardado para no generar en un futuro la clase desde cero
 
 En este archivo encontre al parecer todas las clases que use en mi archivo html, tailwind esta usando todas las clases que he declarado
 para el tema del estilizado, esto ocurre por que Tailwind esta escuchando cambios en mi html para escribirlos en el archivo output.css ya que usamos --watch
 
-Tailwind utiliza este archivo para escribir en codigo css las clases que uso en mi proyecto
+Tailwind utiliza este archivo para escribir en codigo css las clases que uso en mi proyecto. tailwind guarda estas clases en memoria para no tener que 
+regenerar todo desde cero, si en algun momento la clase es nuevamente requerida, ademas tailwind hace esto, buscando patrones de texto en las clases que 
+he definido en mi archivo y que tengan posibilidad de ser una clase real.
 
 
