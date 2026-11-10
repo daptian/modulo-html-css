@@ -428,3 +428,33 @@ regenerar todo desde cero, si en algun momento la clase es nuevamente requerida,
 he definido en mi archivo y que tengan posibilidad de ser una clase real.
 
 
+[2](4)
+Reglas del kit de diseño
+
+**-Radios de borde
+
+Se establecio el uso de rounded-lg para mantener uniformidad en los botones, tarjetas, alertas y campos de formulario
+
+**-Escala de espaciado
+
+Defini las siguientes medidas:
+
+p-2: espaciado pequeño
+p-3: espaciado interno de botones y campos
+p-4: espaciado interno de tarjetas y alertas
+gap-4: separación entre componentes
+m-2: margen entre elementos
+
+**-Paleta de colores
+
+Cyan: botones principales y elementos destacados - Cyan 400
+Teal: estados de interaccion - Teal-600
+Green: alertas de éxito - green-600
+Blue: alertas informativas y estados de foco - blue-500
+Yellow: alertas de advertencia - yellow-500
+Gray: fondos, tarjetas y textos secundarios - gray-800 / gray-900
+
+**-Aplicación
+
+Las reglas se aplicaron a los botones, tarjeta de ruta, alertas y campos de formulario, 
+manteniendo una identidad visual consistente en todos los componentes

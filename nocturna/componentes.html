@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <main class="bg-gray-900 h-max w-dvw p-4 text-white">
+        <section class="flex flex-col gap-4">
+            <header>
+                <h1 class="font-black text-6xl mb-5">Componentes</h1>
+            </header>
+            <article class="bg-gray-800 p-4 rounded-lg flex flex-col gap-4 ">
+                <header>
+                    <h3 class="font-black text-4xl text-green-500">Minireto anterior.</h3>
+                    <p class="font-bold text-2xl">Botones</p>
+                </header>
+                <section class="flex gap-4 m-2 ">
+                    <button class="bg-cyan-400 text-black p-3 rounded-lg hover:cursor-pointer hover:bg-cyan-500 focus:bg-teal-600 hover:-translate-y-2 transition-transform focus:ring-2 ring-blue-600">Botòn Principal</button>
+                    <button class="bg-gray-600 p-3 rounded-lg hover:cursor-pointer hover:bg-gray-500 focus:bg-teal-600 hover:-translate-y-2 transition-transform focus:ring-2 ring-blue-600">Botòn Secundario</button>
+                    <button class="border-2 border-cyan-700 hover:bg-cyan-700 hover:text-white cursor-pointer font-black rounded-lg text-cyan-700 focus:text-teal-700 p-3 hover:-translate-y-2 transition-transform focus:ring-2 ring-cyan-700 shadow-sm shadow-cyan-700">Botòn de contorno</button>
+                </section>
+            </article>
+            <article class="bg-gray-800 p-4 rounded-lg flex flex-col gap-4 mt-4">
+                <header>
+                    <h3 class="font-black text-4xl text-green-500">Card</h3>
+                    <p class="font-bold text-2xl">Tarjeta de ruta (Minireto anterior)</p>
+                </header>
+                <article class="bg-gray-800 text-white p-4 rounded-lg mb-4 hover:-translate-y-2 transition-transform border border-gray-500 hover:shadow-md hover:shadow-cyan-500/50 hover:border-green-300/50 trnassition-all duration-300 hover:cursor-pointer flex flex-col gap-2">
+                    <img class="w-full h-52 object-cover bg-gray-900 rounded-lg text-gray-700 text-center text-5xl flex justify-center items-center uppercase" src="img/luces-centro.jpg" alt="Ruta Luces del Centro">
+                    <aside class="bg-green-300 max-w-max text-green-800 p-2 rounded-lg inline-block">Fácil</aside>
+                    <h3>Luces del Centro</h3>
+                    <ul>
+                        <li>Distancia: <span class="text-gray-400">10 km</span></li>
+                        <li>Duración: <span class="text-gray-400">2 horas</span></li>
+                        <li>Punto de encuentro: <span class="text-gray-400">Centro de la ciudad</span></li>
+                    </ul>
+                    <aside class="bg-blue-300 max-w-max text-blue-800 p-2 rounded-lg inline-block">$55.000</aside>
+                    <a class="bg-cyan-400 hover:bg-cyan-500 max-w-max text-black p-3 rounded-lg hover:cursor-pointer focus:bg-teal-600 hover:-translate-y-2 transition-transform focus:ring-2 ring-blue-600" href="#">Reservar ruta</a>
+                </article>
+            </article>
+            <article class="bg-gray-800 p-4 rounded-lg flex flex-col gap-4 mt-4">
+                <header>
+                    <h3 class="font-black text-4xl text-green-500">Alertas</h3>
+                    <p class="font-bold text-2xl">Informaciòn, èxito y advertencia</p>
+                </header>
+                <section class="flex flex-col gap-4 ">
+                    <div class="bg-white text-black border-l-8 border-blue-500 p-4 rounded-lg">
+                        <h4 class="font-bold">Alerta de informaciòn</h4>
+                        <p>Esta es una alerta de información</p>
+                    </div>
+                    <div role="status" aria-live="polite" class="bg-green-300 text-green-800 border-l-8 border-green-900   p-4 rounded-lg">
+                        <h4 class="font-bold">Alerta de èxito</h4>
+                        <p>La operaciòn se realizo correctamente</p>
+                    </div>
+                    <div class="bg-yellow-300 text-yellow-800 border-l-8 border-yellow-900 p-4 rounded-lg">
+                        <h4 class="font-bold">Alerta de advertencia</h4>
+                        <p>Hay un problema que necesita su atención</p>
+                    </div>
+                </section>
+            </article>
+            <article class="bg-gray-800 p-4 rounded-lg flex flex-col gap-4 mt-4">
+                <header>
+                    <h3 class="font-black text-4xl text-green-500">Formularios</h3>
+                    <p class="font-bold text-2xl">Correo y celular</p>
+                </header>
+                <section class="flex flex-col gap-4 ">
+                    <label for="email" class="font-bold text-md">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="info@ejemplo.com" class="bg-gray-700 text-white p-3 rounded-lg border border-transparent focus:ring-2 ring-blue-600 hover:border hover:border-cyan-500 ">
+                    <p class="text-sm text-gray-400">Ingresa tu dirección de correo electrónico</p>
+                    <label for="phone" class="font-bold text-md">Número de celular:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Número de celular" class="bg-gray-700 text-white p-3 rounded-lg border border-transparent focus:ring-2 ring-blue-600 hover:border hover:border-cyan-500">
+                    <p class="text-sm text-gray-400">Ingresa tu número de celular</p>
+                </section>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
