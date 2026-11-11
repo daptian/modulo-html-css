@@ -551,6 +551,7 @@ Bootstrap con CSS CDN y Js Bondle : 52.81kb
 
 ***___Dia 3___***
 
+[9](6)
 --**Cronómetro:
     Tiempo de inicio: 0
     Tiempo de finalización: 31 minutos  
@@ -569,3 +570,13 @@ Bootstrap con CSS CDN y Js Bondle : 52.81kb
     En dispositivos moviles se adapta en una sola columna vertical fluida; en pantallas medianas y de escritorio (md:), los campos logísticos se organizan limpiamente en una cuadrícula de dos 
     columnas
     Los colores del kit de marca y la variante dark: mantienen un contraste óptimo y legible en ambos modos (claro y oscuro)
+
+  
+[10](6) 
+--**Tiempo Cronometro:
+    Inicio: 0
+    Fin: 34 minutos
+    
+--**Verificación de Enlaces y Rutas Relativas:
+    Se comprobaron las rutas hacia la hoja de estilos (../src/output.css), las imágenes (../img/...) y los hipervínculos de la web (../index.html y ../paginas/reservas.html) evitando errores 404 o 404 Not Found al desplegar tanto en entorno local como en GitHub Pages
+    Coherencia de Marca: ambas webs comparten identicos códigos de color corporativo (Verde Ruta, Naranja Pedal, Azul Noche, Crema, Gris Asfalto y Amarillo Farol) y la tipografía de Google Fonts (Montserrat y Open Sans)
