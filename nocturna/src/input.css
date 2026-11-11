@@ -13,3 +13,15 @@
   --color-gris-asfalto: #5B6470;
   --color-amarillo-farol: #FFD166;
 }
+
+@layer components {
+  .btn-primary {
+    @apply inline-block max-w-max p-3 rounded-lg hover:cursor-pointer font-bold text-azul-noche bg-naranja-pedal hover:bg-verde-ruta hover:text-crema hover:-translate-y-1 transition-all focus:ring-2 ring-naranja-pedal;
+  }
+  .btn-outline {
+    @apply inline-block border-2 border-naranja-pedal p-3 rounded-lg hover:cursor-pointer font-black text-naranja-pedal hover:bg-naranja-pedal hover:text-azul-noche hover:-translate-y-1 transition-all focus:ring-2 ring-naranja-pedal shadow-sm;
+  }
+  .form-input {
+    @apply p-3 rounded-lg border border-gray-300 dark:border-transparent bg-gray-100 dark:bg-gray-700 text-azul-noche dark:text-crema hover:border-naranja-pedal focus:outline-none focus:ring-2 focus:ring-naranja-pedal;
+  }
+}

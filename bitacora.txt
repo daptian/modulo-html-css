@@ -493,3 +493,58 @@ La pagina de nocturna responde bien ante todas las medidas resposive
 | Inscripción          | 1 col.   | 2 col.   | 2 col.   | 2 col.   |
 | Footer               | Vertical | Horizontal| Horizontal| Horizontal|
 +----------------------+----------+----------+----------+----------+
+
+[8](4)
+
+Comparativa de tamaños 
+
+Tailwind con --minfy : 23.66kb
+Bootstrap con CSS CDN y Js Bondle : 52.81kb
+
+[8](5)
+
+**-Tabla de comparativa: 
+    Bootstrap vs Tailwind CSS 
+
+    Bootstrap
+    Curva de Aprendizaje: Baja 
+    Porque ? Utiliza nombres de componentes predefinidos (btn, card, navbar) listos para usar sin necesidad de escribir estilos desde cero
+
+    Tailwind
+    Curva de Aprendizaje: Media
+    Porque ? Requiere memorizar utilidades como (p-4, flex, bg-gray-800), aunque la estructura resulta muy intuitiva a algunos coders.
+    
+    Bootstrap
+    Personalización
+    Compleja
+    Porque ? Adaptar el tema de marca exige modificar variables precompiladas o sobrescribir reglas mediante CSS personalizado (!important)
+    
+    Tailwind
+    Personalización
+    Alta y Flexibilidad Total
+    Porque ? Los colores (--color-*) y fuentes de la marca se configuran directamente con @theme, aplicándose en todo el HTML sin resistencia
+    
+    Bootstrap
+    Tamaño Final del BundleGrande (~280 KB)
+    Porque ? Incluye toda la librería de componentes genéricos (usados o no) y el archivo ejecutable de JavaScript 
+    
+    Tailwind
+    Muy Reducido (~12 KB)
+    Porque ? Mediante el flag --minify, el motor de Tailwind elimina todo el CSS no utilizado
+    
+    Bootstrap
+    Casos de Uso 
+    Razon ? PrincipalesPrototipeo rápido, paneles de administración internos (dashboards) e interfaces estandarizadas donde el diseño único no sea prioritario
+    
+    Tailwind
+    Casos de Uso
+    Raon ? Landing pages de marca personalizada, sitios con diseño a medida, sistemas orientados a alto rendimiento visual y soporte nativo de Dark Mode.  
+
+
+**__Recomendación: 
+  Se recomienda mantener la próxima versión del sitio web de Rueda Libre construida sobre Tailwind CSS.   
+**__:Justificación:
+  Identidad Visual: Tailwind permitio integrar de forma nativa la paleta cromática (Verde Ruta, Naranja Pedal, Azul Noche, Crema, Gris Asfalto y Amarillo Farol) y las tipografías corporativas (Montserrat y Open Sans) mediante la directiva @theme sin pelear contra componentes preestilizados.   
+  Rendimiento y la carga en dispositivos moviles: La landing page final requiere descargar solo ~12 KB de estilos frente a los >270 KB que involucraría Bootstrap, garantizando una velocidad de carga óptima en dispositivos móviles para ciclistas en ruta.   
+  Mantenibilidad del HTML: La implementación de clases como .btn-primary y .form-input mediante @layer components y @apply eliminó la necesidad de escribir clases y clases de código en el HTML sin renunciar a la velocidad del enfoque basado en utilidades. 
+
