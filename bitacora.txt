@@ -464,9 +464,32 @@ Dia 2
 
 Reto 1
 
-[1](4)
+[5](4)
 
 Decidi usar grid con grid-col para ambos por que es la opcion mas facil para un layout en escritorio como en movil,
 ademas de su facil sintaxis es la mas facil de modificar, para mi.
 
 Tambien pude usar flex con flex-wrap pero no siento que sea la mejor opcion para movil
+
+[6](1)
+
+**-Que partes del landing se rompen ?
+
+El menu de navegaciòn se ve raro y ubicado en la izquierda
+la anchura del contenedor principal es muy angosta y el contenido se ve apretado
+
+
+[6](5)
+
+La pagina de nocturna responde bien ante todas las medidas resposive
+
++----------------------+----------+----------+----------+----------+
+| Elemento             | 360 px   | 768 px   | 1024 px  | 1280 px  |
++----------------------+----------+----------+----------+----------+
+| Header               | Vertical | Horizontal| Horizontal| Horizontal|
+| Navegación           | Botón    | Completa | Completa | Completa |
+| Tarjetas de rutas    | 1 col.   | 2 col.   | 3 col.   | 3 col.   |
+| Pasos de funciona    | 1 col.   | 2 col.   | 4 col.   | 4 col.   |
+| Inscripción          | 1 col.   | 2 col.   | 2 col.   | 2 col.   |
+| Footer               | Vertical | Horizontal| Horizontal| Horizontal|
++----------------------+----------+----------+----------+----------+
