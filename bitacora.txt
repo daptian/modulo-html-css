@@ -548,3 +548,24 @@ Bootstrap con CSS CDN y Js Bondle : 52.81kb
   Rendimiento y la carga en dispositivos moviles: La landing page final requiere descargar solo ~12 KB de estilos frente a los >270 KB que involucraría Bootstrap, garantizando una velocidad de carga óptima en dispositivos móviles para ciclistas en ruta.   
   Mantenibilidad del HTML: La implementación de clases como .btn-primary y .form-input mediante @layer components y @apply eliminó la necesidad de escribir clases y clases de código en el HTML sin renunciar a la velocidad del enfoque basado en utilidades. 
 
+
+***___Dia 3___***
+
+--**Cronómetro:
+    Tiempo de inicio: 0
+    Tiempo de finalización: 31 minutos  
+      
+--**Prueba de Accesibilidad por Teclado (Tab / Shift + Tab / Enter / Espacio): 
+    El orden de enfoque (tabindex) sigue un flujo lógico estricto gracias al orden semántico de las etiquetas <fieldset>, <legend>, <label> y los campos de entrada
+    Los botones de opción (radio) y casillas (checkbox) responden correctamente al espacio y las flechas del teclado sin requerir ninguna interaccion con el mouse
+    
+--**Pruebas de Validación Nativa:
+    Formulario Vacío: Al hacer clic en "Confirmar inscripcion" sin datos, el navegador bloquea el envío enfocando automáticamente el primer campo obligatorio (nombre)
+    Datos Invalidos: Si se ingresa un celular de prueba como 12345 (que no cumple con pattern="^3[0-9]{9}$"), el navegador muestra la alerta nativa con el mensaje configurado en title
+    Formulario Completo: Al rellenar todos los campos correctamente respetando los rangos (acompañantes de 0 a 3, nombre con más de 3 letras, celular empezando por 3 y condiciones aceptadas), 
+      el formulario se procesa de manera exitosa
+
+--**Comprobacion Responsive y Modo Oscuro:
+    En dispositivos moviles se adapta en una sola columna vertical fluida; en pantallas medianas y de escritorio (md:), los campos logísticos se organizan limpiamente en una cuadrícula de dos 
+    columnas
+    Los colores del kit de marca y la variante dark: mantienen un contraste óptimo y legible en ambos modos (claro y oscuro)
