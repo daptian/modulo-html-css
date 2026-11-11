@@ -580,3 +580,20 @@ Bootstrap con CSS CDN y Js Bondle : 52.81kb
 --**Verificación de Enlaces y Rutas Relativas:
     Se comprobaron las rutas hacia la hoja de estilos (../src/output.css), las imágenes (../img/...) y los hipervínculos de la web (../index.html y ../paginas/reservas.html) evitando errores 404 o 404 Not Found al desplegar tanto en entorno local como en GitHub Pages
     Coherencia de Marca: ambas webs comparten identicos códigos de color corporativo (Verde Ruta, Naranja Pedal, Azul Noche, Crema, Gris Asfalto y Amarillo Farol) y la tipografía de Google Fonts (Montserrat y Open Sans)
+
+[11](6)
+Registro y Retroalimentación
+--**Cronometro:
+      Inicio: 0
+      Fin: 38 minutos 
+
+--**Validación en DevTools (Computed / Box Model):
+      Al inspeccionar las tres tarjetas en pantalla grande (lg), la propiedad display: flex combinada con flex-col justify-between asegura que el contenido interno ocupe todo el alto disponible
+      Las mediciones en el panel Computed de DevTools comprueban que el relleno (p-6) y el ancho de las tarjetas exteriores se mantienen, diferenciándose la tarjeta central (Pareja) únicamente por su borde más grueso (border-4), s
+        sombra y color de fondo contextual sin romper la armonía de la cuadrícula (grid)
+
+--**Responsive y Modo Oscuro:
+      En vista movil (grid-cols-1) se despliega en una sola columna vertical limpia y sin desbordamientos horizontales de scroll
+      Las clases dark: garantizan la legibilidad y coherencia visual en modo oscuro utilizando la paleta corporativa de Rueda Libre
+
+    
