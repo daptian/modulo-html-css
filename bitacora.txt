@@ -458,3 +458,15 @@ Gray: fondos, tarjetas y textos secundarios - gray-800 / gray-900
 
 Las reglas se aplicaron a los botones, tarjeta de ruta, alertas y campos de formulario, 
 manteniendo una identidad visual consistente en todos los componentes
+
+
+Dia 2 
+
+Reto 1
+
+[1](4)
+
+Decidi usar grid con grid-col para ambos por que es la opcion mas facil para un layout en escritorio como en movil,
+ademas de su facil sintaxis es la mas facil de modificar, para mi.
+
+Tambien pude usar flex con flex-wrap pero no siento que sea la mejor opcion para movil
