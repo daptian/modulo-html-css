@@ -7,7 +7,7 @@
 
 ## 🔗 Enlaces Publicados y Despliegue
 * **Sitio Principal (GitHub Pages):** [https://daptian.github.io/modulo-html-css/index.html](https://daptian.github.io/modulo-html-css/index.html)
-* **Sitio de prueba de boostrap:** [https://daptian.github.io/modulo-html-css/pruebas/catalogo-boostrap.html](https://daptian.github.io/modulo-html-css/pruebas/catalogo-boostrap.html)
+* **Sitio de prueba de boostrap:** [https://daptian.github.io/modulo-html-css/pruebas/catalogo-bootstrap.html](https://daptian.github.io/modulo-html-css/pruebas/catalogo-boostrap.html)
 * **Landing Rueda Nocturna (GitHub Pages):** [https://daptian.github.io/modulo-html-css/nocturna/index.html](https://daptian.github.io/modulo-html-css/nocturna/index.html)
 * **Repositorio en GitHub:** [https://github.com/daptian/modulo-html-css](https://github.com/daptian/modulo-html-css)
 
